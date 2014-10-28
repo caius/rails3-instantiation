@@ -16,7 +16,9 @@ module ActiveRecord
         class_name: name
       }
 
-      result_set.collect { |record| instantiate(record) }
+      message_bus.instrument("instantiation.active_record", payload) do
+        result_set.collect { |record| instantiate(record) }
+      end
     end
 
   end
