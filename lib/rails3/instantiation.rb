@@ -5,3 +5,6 @@ module Rails3
     # Your code goes here...
   end
 end
+
+require "rails3/instantiation/backports/join_dependency"
+require "rails3/instantiation/backports/querying"
