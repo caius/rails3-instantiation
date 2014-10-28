@@ -20,6 +20,8 @@ Or install it yourself as:
 
 Subscribe to `"instantiation.active_record"` notifications.
 
+You can also `require "rails3/instantiation/log_notification"` to get the notifications logged via `Rails.logger` as `INFO` messages.
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/rails3-instantiation/fork )
